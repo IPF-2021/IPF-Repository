@@ -8,7 +8,7 @@ app.use(express.json())
 
 
 //routes
-
+app.use('/profesores', require('./routes/routes.prof'));
 
 
 //configs
@@ -16,5 +16,5 @@ app.use(express.json())
 app.set('port', process.env.PORT || 4000)
 
 app.listen(app.get('port'), () => {
-  console.log("servidor iniciado", app.get('port'))
+    console.log("servidor iniciado", app.get('port'))
 })
