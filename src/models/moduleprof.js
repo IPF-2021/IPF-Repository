@@ -12,10 +12,6 @@ const ProfSchema = new Schema({
     activo: {
         type: Boolean,
         default: true
-    },
-    id: {
-        type: Number,
-        required: false
     }
 });
 

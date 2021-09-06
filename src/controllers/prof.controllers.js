@@ -30,7 +30,7 @@ ctrlprofes.rutaPut = async(req, res) => {
 }
 ctrlprofes.rutaDelete = async(req, res) => {
     const { id } = req.body;
-    await findByIdAndDelete(id)
+    await profesores.findByIdAndUpdate(id, { activo: false })
     res.json({
         msg: 'profesor eliminado correctamente'
     })

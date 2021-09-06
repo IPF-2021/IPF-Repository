@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: false }));
 
 //routes
 app.use('/users', require('./routes/user.routes'));
-app.use('/profesores', require('./routes/routes.prof'));
+app.use('/profesores', require('./routes/prof.routes'));
 
 //configs
 
