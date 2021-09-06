@@ -2,9 +2,7 @@
 
 ## Contributors
 
-- Devyan18
-- Hectorv72
-- Williamesquivel
+- Devyan18 - Hectorv72 - Williamesquivel
 
 
 ## Instalation
