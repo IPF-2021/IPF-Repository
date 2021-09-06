@@ -10,6 +10,11 @@ app.use(express.urlencoded({ extended: false }));
 
 
 //routes
+app.get('/home', (req, res) => {
+    res.send('"Servidor Express funcionando"')
+})
+
+
 app.use('/users', require('./routes/user.routes'));
 app.use('/profesores', require('./routes/prof.routes'));
 app.use('/notes', require('./routes/notes.routes'))
